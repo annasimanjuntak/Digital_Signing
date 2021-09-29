@@ -15,10 +15,10 @@ class CreateUserActivitiesTable extends Migration
     {
         Schema::create('user_activities', function (Blueprint $table) {
             $table->id();
-            $table->timestamps('action date');
+            $table->timestamp('action_date');
             $table->string('document_file');
             $table->string('action');
-            $table->string('status');
+            $table->enum('status',['Action Required','Waiting for Others','Expiring Soon','Completed']);
             $table->timestamps();
         });
     }

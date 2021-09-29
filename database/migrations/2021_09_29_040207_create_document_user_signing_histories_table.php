@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDocumentHistoriesTable extends Migration
+class CreateDocumentUserSigningHistoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateDocumentHistoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('document_histories', function (Blueprint $table) {
+        Schema::create('document_user_signing_histories', function (Blueprint $table) {
             $table->id();
-            $table->integer('document_id');
-            $table->string('file_name');
+            $table->integer('document_signing_specimen_id');
+            $table->string('user');
             $table->enum('status',['Action Required','Waiting for Others','Expiring Soon','Completed']);
             $table->timestamps();
         });
@@ -29,6 +29,6 @@ class CreateDocumentHistoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('document_histories');
+        Schema::dropIfExists('document_user_signing_histories');
     }
 }

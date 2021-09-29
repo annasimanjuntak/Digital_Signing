@@ -5,8 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class DocumentModel extends Model
+class DocumentViewAccess extends Model
 {
     use HasFactory;
-    protected $table='Document';
+    protected $fillable = [
+        'user_id',
+        'document_id',
+    ];
 }

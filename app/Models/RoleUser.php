@@ -5,14 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class UserActivity extends Model
+class RoleUser extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'action date',
-        'document_file',
-        'action',
-        'status',
-       
+        'user_id',
+        'role',
     ];
 }

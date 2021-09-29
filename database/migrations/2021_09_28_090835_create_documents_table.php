@@ -19,7 +19,7 @@ class CreateDocumentsTable extends Migration
             $table->string('file_name');
             $table->string('uploader');
             $table->date('expired');
-            $table->enum('signing_participation_type',['Me Only','Me End Others','Other Only']);
+            $table->enum('signing_participation_type',['Me Only','Me And Others','Other Only']);
             $table->timestamps();
         });
     }

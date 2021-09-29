@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDocumentHistoriesTable extends Migration
+class CreateRoleUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateDocumentHistoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('document_histories', function (Blueprint $table) {
+        Schema::create('role_users', function (Blueprint $table) {
             $table->id();
-            $table->integer('document_id');
-            $table->string('file_name');
-            $table->enum('status',['Action Required','Waiting for Others','Expiring Soon','Completed']);
+            $table->integer('role_id');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateDocumentHistoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('document_histories');
+        Schema::dropIfExists('role_users');
     }
 }

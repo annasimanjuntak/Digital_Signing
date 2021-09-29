@@ -19,7 +19,7 @@ class CreateDocumentUserSigningsTable extends Migration
             $table->integer('document_id');
             $table->string('location');
             $table->string('note');
-            $table->timestamps('sign_at');
+            $table->timestamp('sign_at');
             $table->timestamps();
         });
     }
