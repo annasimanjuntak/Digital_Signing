@@ -122,5 +122,7 @@ class RegisterController extends Controller
           'position'=>$data['position'],
           
         ]);
+
+        return Redirect()->route('login')->with('success', 'waiting for verification');
     }
 }

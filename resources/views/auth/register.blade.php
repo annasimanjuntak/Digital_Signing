@@ -364,8 +364,9 @@
             <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
                 <h2 id="heading">Register Your Account</h2>
                 <p>Fill all form field to go to next step</p>
-                <form id="msform">
+                <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                     <!-- progressbar -->
+                    @csrf
                     <ul id="progressbar">
                         <li class="active" id="account"><strong>Personal</strong></li>
                         <li id="office"><strong>Office</strong></li>
