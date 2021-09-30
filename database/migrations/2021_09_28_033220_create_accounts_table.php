@@ -21,6 +21,7 @@ class CreateAccountsTable extends Migration
             $table->date('date_of_birth');
             $table->date('place_of_birth');
             $table->enum('gender', ['Male','Female']);
+            $table->integer('phone');
             $table->string('address');
             $table->string('city');
             $table->string('province');
