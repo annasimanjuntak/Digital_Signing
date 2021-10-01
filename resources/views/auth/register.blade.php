@@ -357,14 +357,14 @@
 </head>
 
 <body class='snippet-body'>
-
+        
     <div class="row justify-content-center" style="background-color: #F3F6F9;">
         <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 text-center p-0 mt-4 mb-3"
             style="background-color: #ffffff; border-radius: 16px;">
             <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
                 <h2 id="heading">Register Your Account</h2>
                 <p>Fill all form field to go to next step</p>
-                <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
+                <form method="POST" id="msform" action="{{ route('register') }}" enctype="multipart/form-data">
                     <!-- progressbar -->
                     @csrf
                     <ul id="progressbar">
@@ -377,7 +377,7 @@
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div> <br> <!-- fieldsets -->
-                    <fieldset>
+                    <fieldset id="personal_information" class="">
                         <div class="form-card" style="width: 115%; margin-left: 18px;">
                             <div class="row">
                                 <div class="col-7">
@@ -388,7 +388,7 @@
                             <div class="row justify-content">
                                 <div class="col-lg-5 col-md-6 col-sm-12">
                                     <div class="form-group"><label for="nik">Nik</label><input type="text"
-                                            class="form-control" id="nik" name="nik" placeholder="Type your nik"> </div>
+                                            class="form-control" id="nik" name="nik" placeholder="Type your nik" require> </div>
                                     <div class="form-group"> <label for="name">Name</label> <input type="text"
                                             class="form-control" id="id" name="name"placeholder="Type your name"> </div>
                                     <div class="form-group"> <label for="address">Address</label> <input
@@ -428,7 +428,7 @@
                                             <option>Female</option>
                                         </select> </div>
                                         <div class="form-group"> <label for="phone">Mobile Phone</label> <input
-                                            type="text" class="form-control" id="phone" name="name"
+                                            type="text" class="form-control" id="phone" name="phone"
                                             placeholder="Type your mobile phone "> </div>
                                   
                                     <div class="form-group"> <label class="ktp_photo">Upload Your Ktp:</label>
@@ -439,11 +439,11 @@
                             </div>
                         </div> <input type="button" name="next" class="next action-button" value="Next" />
                     </fieldset>
-                    <fieldset>
+                    <fieldset id="company_information">
                         <div class="form-card" style="margin: 0px 60px 0px 60px;">
                             <div class="row">
                                 <div class="col-7">
-                                    <h2 class="fs-title">Office Information:</h2>
+                                    <h2 class="fs-title">Company Information:</h2>
                                 </div>
                                
                             </div> <label class="fieldlabels">Npwp</label> <input type="text" name="npwp"
@@ -457,7 +457,7 @@
                         </div> <input type="button" name="next" class="next action-button" value="Next" /> <input
                             type="button" name="previous" class="previous action-button-previous" value="Previous" />
                     </fieldset>
-                    <fieldset>
+                    <fieldset account_information>
                         <div class="form-card" style="margin: 0px 60px 0px 60px;">
                             <div class="row">
                                 <div class="col-7">
@@ -519,29 +519,16 @@
                         </div>
 
 
-                            <input type="button" name="next" class="next action-button" value="Submit" /> <input
-                            type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                           <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
                     </fieldset>
-                    <fieldset>
-                        <div class="form-card">
-                            <div class="row">
-                                <div class="col-7">
-                                    <h2 class="fs-title">Finish:</h2>
-                                </div>
-                               
-                            </div> <br><br>
-                            <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
-                            <div class="row justify-content-center">
-                                <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image">
-                                </div>
-                            </div> <br><br>
-                            <div class="row justify-content-center">
-                                <div class="col-7 text-center">
-                                    <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
-                                </div>
+                    
+                    <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Register') }}
+                                </button>
                             </div>
-                        </div>
-                    </fieldset>
+                    </div>
                 </form>
             </div>
         </div>
