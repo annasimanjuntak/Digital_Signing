@@ -7,9 +7,12 @@ use Illuminate\Http\Request;
 
 class DocumentController extends Controller
 {
-    function FetchDocumentStats(){
-        $document=DocumentModel::All();
+    function AllDoc(){
+        $documents = DB::table('documents')
+        ->join('users','documents.user_id','user_id')
+        ->select('documents.*','users.name')
+        ->latest()->paginate(5);
 
-        return view('welcome',compact('document'));
+        return view('home',compact('documents '));
     }
 }

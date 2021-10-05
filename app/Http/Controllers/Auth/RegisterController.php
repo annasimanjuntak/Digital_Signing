@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
-use App\Models\Account;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -50,23 +49,12 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        return Validator::make($data,[
+        return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
+           
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'captcha' => ['required','captcha'],
-            // 'nik' =>['required','integer','digits:16','unique:accounts'],
-            // 'ktp_photo'=> ['required','mimes:jpg,jpeg,png;'],
-            // 'date_of_birth'=>['required','string','max:255'],
-            // 'place_of_birth'=>['required','date_format:Y-M-D','before:today'],
-            // 'gender' =>['required','in:Male,Female'],
-            // 'address'=>['required','string','max:1024'],
-            // 'city'=>['required','string','max:255'],
-            // 'province'=>['required','string','max:255'],
-            // 'npwp_photo'=> ['mimes:jpg,jpeg,png'],
-            // 'org_unit'=>['required','string','max:255'],
-            // 'work_unit'=>['required','string','max:255'],
-            // 'position'=>['required','string','max:255'],
         ]);
     }
 
@@ -81,46 +69,13 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-
-    public function create(array $data)
-    {   
-    
-        $ktp_photo = $data->file('ktp_photo');
-        $npwp_photo = $data->file('npwp_photo');
-        $name_gen = hexdec(uniqid());
-        $img_ext = strtolower($ktp_photo->getClientOriginalExtension());
-        $img_name = $name_gen.'.'.$img_ext;
-        $up_location_ktp = 'image/ktp/';
-        $up_location_npwp = 'image/npwp/';
-        $ktp_img = $up_location_ktp.$img_name;
-        $npwp_img = $up_location_npwp.$img_name;
-        $ktp_photo->move($up_location_ktp,$img_name);
-        $npwp_photo->move($up_location_npwp,$img_name);
-     
-    
+    protected function create(array $data)
+    {
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
-            'password' => Hash::make($data['password'])
-          ]);
-        Account::create([
-          'nik'=>$data['nik'],
-          'ktp_photo'=>$ktp_img,
-          'name'=>$data['name'],
-          'date_of_birth'=>$data['date_of_birth'],
-          'place_of_birth'=>$data['place_of_birth'],
-          'gender'=>$data['gender'],
-          'address'=>$data['address'],
-          'city'=>$data['city'],
-          'province'=>$data['province'],
-          'npwp'=>$data['npw'],
-          'npwp_photo'=>$npwp_img,
-          'org_unit'=>$data['org_unit'],
-          'work_unit'=>$data['work_unit'],
-          'position'=>$data['position'],
-        ]); 
-     
+            'password' => Hash::make($data['password']),
+        ]);
     }
-
-
 }
+
