@@ -15,11 +15,11 @@ class CreateDocumentsTable extends Migration
     {
         Schema::create('documents', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id');
+            $table->foreignId('user_id');
             $table->string('file_name');
-            $table->string('uploader');
+            $table->string('path');
             $table->date('expired');
-            $table->enum('signing_participation_type',['Me Only','Me And Others','Other Only']);
+            $table->enum('signing_participation_type',['Me Only','Me and Others','Others Only']);
             $table->timestamps();
         });
     }

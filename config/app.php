@@ -166,7 +166,7 @@ return [
          * Package Service Providers...
          */
         Mews\Captcha\CaptchaServiceProvider::class,
-
+        Intervention\Image\ImageServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -230,7 +230,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'Captcha' => Mews\Captcha\Facades\Captcha::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Image' => Intervention\Image\Facades\Image::class
     ],
 
 ];

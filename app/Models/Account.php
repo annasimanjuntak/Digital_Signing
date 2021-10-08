@@ -9,19 +9,24 @@ class Account extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'nik',
+        'user_id',
+        'phone',
+        'ktp',
         'ktp_photo',
-        'name',
-        'date_of_birth',
-        'place_of_birth',
-        'gender',
+        'npwp',
+        'npwp_photo',
         'address',
         'city',
         'province',
-        'npwp',
-        'npwp_photo',
+        'gender',
+        'date_of_birth',
+        'place_of_birth',
         'org_unit',
         'work_unit',
         'position',
+        'spesimen_file'
     ];
+    public function user(){
+        return $this->belongsTo(User::class,'id','user_id');
+    }
 }

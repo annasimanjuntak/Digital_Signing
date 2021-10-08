@@ -1,14 +1,102 @@
-@extends('layouts.app')
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href="../assets/vendors/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <!-- Font Awesome CSS -->
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer></script>
+    </head>
+    <style>
+        html,
+        body {
+            height: 100%;
+            font-family: 'Roboto';
+        }
+         
+        .global-container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F3F6F9;
+           
+        }
+        .card {
+    
+            background: #FFFFFF;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 445px;
+            height: 420px;
+        }
+         
+        form {
+            padding-top: 10px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+         
+        .card-title {
+            font-weight: 300;
+        }
+         
+        .btn {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+         
+        .login-form {
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+            margin: 20px;
+            height: 600px;
+        }
+         
+        .sign-up {
+            padding: 20px 0 0;
+        }
+         
+        .alert {
+            margin-bottom: -30px;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+        .text-center{
+            margin-top: 30px;
+        }
+        .form-group {
+            margin-bottom: 0.5rem;
+        }
+        .label {
+            color: #212529;
+            font-size: 14px;
+        }
+        .form-control {
+            border: 1px solid #ced4da;
+            box-sizing: border-box;
+            border-radius: 4.8px;
+        }
+        a {
+        color: #2196F3;
 
+        }
+
+         
+        </style>
+    <body>
+        <div class="global-container">
+            <div class="card login-form">
                 <div class="card-body">
-                    @if ($errors->any())
+                    <div class="text-center">
+                    <img src="{{asset('../image/logo.png')}}">
+                    </div>">
+                    </div>
+                    <div class="card-text">
+                        @if ($errors->any())
                     <div class="alert alert-danger">
                         <ul>
                             @foreach ($errors->all() as $error)
@@ -71,21 +159,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="captcha" class="col-md-4 col-form-label text-md-right">Captcha</label>
-                            <div class="col-md-6 captcha">
-                                <span>{!! captcha_img() !!}</span>
-                                <button type="button" class="btn btn-danger" class="reload" id="reload">
-                                &#x21bb;
-                                </button>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="captcha" class="col-md-4 col-form-label text-md-right">Enter Captcha</label>
-                            <div class="col-md-6">
-                                <input id="captcha" type="text" class="form-control" placeholder="Enter Captcha" name="captcha">
-                            </div>
-                        </div>
+                      
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
@@ -95,23 +169,15 @@
                             </div>
                         </div>
                     </form>
+                        
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-@endsection
-@push('scripts')
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript">
-    $('#reload').click(function () {
-        $.ajax({
-            type: 'GET',
-            url: 'reload-captcha',
-            success: function (data) {
-                $(".captcha span").html(data.captcha);
-            }
-        });
-    });
-</script>
-@endpush
+    </body>
+    <!-- <script type="text/javascript">
+        var onloadCallback = function() {
+          alert("grecaptcha is ready!");
+        };
+      </script> -->
+</html>

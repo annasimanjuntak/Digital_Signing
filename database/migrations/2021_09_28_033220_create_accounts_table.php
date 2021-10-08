@@ -15,21 +15,22 @@ class CreateAccountsTable extends Migration
     {
         Schema::create('accounts', function (Blueprint $table) {
             $table->id();
-            $table->integer('nik');
-            $table->string('ktp_photo');
-            $table->string('name');
-            $table->date('date_of_birth');
-            $table->date('place_of_birth');
-            $table->enum('gender', ['Male','Female']);
+            $table->integer('user_id');
             $table->integer('phone');
+            $table->integer('ktp');
+            $table->string('ktp_photo');
+            $table->integer('npwp')->nullable();
+            $table->string('npwp_photo')->nullable(); 
             $table->string('address');
             $table->string('city');
-            $table->string('province');
-            $table->integer('npwp')->nullable();
-            $table->string('npwp_photo')->nullable();
+            $table->string('province'); 
+            $table->enum('gender', ['Male','Female']);
+            $table->date('date_of_birth');
+            $table->string('place_of_birth');
             $table->string('org_unit');
             $table->string('work_unit');
             $table->string('position');
+            $table->string('spesimen_file');
             $table->timestamps();
         });
     }

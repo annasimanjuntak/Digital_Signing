@@ -11,7 +11,7 @@ class Document extends Model
     protected $fillable = [
         'user_id',
         'file_name',
-        'uploader',
+        'path',
         'expired',
         'signing_participation_type',
     ];
