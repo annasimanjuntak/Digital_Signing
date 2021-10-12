@@ -1,0 +1,127 @@
+:root{
+    --line-border-empty:#B8EEFE;
+    --line-border-fill:#79A5F5;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.progress-container{
+    display: flex;
+}
+
+body{
+    background-color:#FFFCF6 ;
+    font-family: "Roboto";
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+h1{
+    color:#090A3A ;
+    margin-bottom: 90px ;
+}
+.fas fa-file-upload{
+    font-size: 1.8rem;
+    color:#090A3A;
+}
+.fas fa-pen{
+    font-size: 1.8rem;
+    color:#090A3A;
+    background-color:#090A3A ;
+}
+.fas fa-print{
+    font-size: 1.8rem;
+    color:#090A3A;
+}
+
+.p-container{
+    text-align: center;
+}
+.progress-container{
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    max-width: 100%;
+
+}
+.progress-container::before{
+    content:"" ;
+    background-color:var(--line-border-empty);
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: translateY(-45%);
+    height: 7px;
+    width: 100%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+.progress{
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 5px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+.circle{
+    background-color: #B8EEFE;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 3px solid var(--line-border-empty);
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    transition:0.4s ease ;
+}
+.circle.active{
+    border-color: var(--line-border-fill);
+    background-color:var(--line-border-fill);
+}
+
+
+.btn{
+    background-color: var(--line-border-fill);
+    color: #fff;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin:5px;
+    font-size: 14px;
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:active{
+     transform: scale(0.97);
+}
+
+.btn:disabled{
+    background-color: #4a4a52;
+    pointer-events: none;
+}
+
+
+
+.icontext{
+    font-size: 12;
+    color: #090A3A;
+    font-family: "Open Sans";
+    text-align: center;
+}
+

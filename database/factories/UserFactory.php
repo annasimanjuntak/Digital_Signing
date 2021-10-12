@@ -45,3 +45,8 @@ class UserFactory extends Factory
         });
     }
 }
+// 'file_name'=>$this->faker->file('docs','site',false),
+//             'uploader'=>$this->faker->name(),
+//             'status'=>$this->faker->randomElement(['Action REquired','Waiting for Others','Expiring Soon','Completed']),
+//             'expired'=>$this->faker->dateTimeBetween('+1 days', '+3 days'),
+//             'signing_participation_type'=>$this->faker->randomElement(['Me Only','Me and Others','Others Only'])
