@@ -8,7 +8,7 @@
           @foreach ($data as $doc)
             <div class="col">
               <div class="card h-100">
-                <iframe src="./files/{{ $doc->path }}" frameborder="0"></iframe>
+                <iframe src="{{ asset('storage/'. $doc->path) }}" frameborder="0"></iframe>
                 <div class="card-body">
                   <h5 class="card-title"><a href="docs/{{ $doc->id }}" class="text-decoration-none text-dark">{{ $doc->file_name }}</a></h5>
                   <p class="card-text" style="font-weight: bold">{{ $doc->status }}</p>

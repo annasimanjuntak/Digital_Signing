@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DocumentController;
+use App\Http\Controllers\LoginController;
 use App\Models\Document;
 use Illuminate\Support\Facades\Route;
 
@@ -21,7 +22,7 @@ Route::get('/', function () {
         "active"=>"home",
         "data"=>Document::latest()->get()
     ]);
-});
+})->middleware('auth');
 
 Route::get('/pos', function () {
     return view('beranda',[
@@ -30,12 +31,23 @@ Route::get('/pos', function () {
         "data"=>Document::latest()->get(),
         "username" => "Ryan Tanoto"
     ]);
-});
+})->middleware('auth');
+
 
 Route::get('docs/{document:id}',[DocumentController::class,'show']);
 
-Route::get('/alldocs',[DocumentController::class, 'index']);
+Route::get('/alldocs',[DocumentController::class, 'index'])->middleware('auth');
 Route::get('/form/meonly',[DocumentController::class, 'showFormMeOnly']);
-Route::get('/form',[DocumentController::class, 'showForm']);
-Route::get('/participation',[DocumentController::class, 'participate']);
+Route::get('/form',[DocumentController::class, 'showForm'])->middleware('auth');
+Route::get('/participation',[DocumentController::class, 'participate'])->middleware('auth');
 Route::post('/store', [DocumentController::class,'store'])->name('store');
+
+Route::get('/login',[LoginController::class, 'index'])->name('login')->middleware('guest');
+
+Route::post('/login',[LoginController::class, 'authenticate']);
+
+Route::post('/logout',[LoginController::class, 'logout']);
+
+Route::get('/register',function(){
+    return view('register.register');
+})->middleware('guest');

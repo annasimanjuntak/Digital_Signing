@@ -10,19 +10,19 @@
 
             <div class="mb-3">
                 <label for="userId" class="form-label">User ID</label>
-                <input type="text" class="form-control" id="userid" name="userid" placeholder="name@example.com" value="1" readonly>
+                <input type="text" class="form-control" id="userid" name="userid" placeholder="name@example.com" value="{{ auth()->user()->id }}" readonly>
                 <input type="email" class="form-control" id="signtype" name="signtype"  value="Me Only" readonly hidden>
             </div>
 
             <div class="mb-3">
                 <label for="uploader" class="form-label">Uploader</label>
-                <input type="text" class="form-control" id="uploader" name="uploader" placeholder="name@example.com" value="Fetched From Database" readonly>
-                <input type="text" class="form-control" id="status" name="status" placeholder="name@example.com" value="Completed" readonly hidden>
+                <input type="text" class="form-control" id="uploader" name="uploader" placeholder="name@example.com" value="{{ auth()->user()->name }}" readonly>
+                <input type="text" class="form-control" id="status" name="status" placeholder="name@example.com" value="Action Required" readonly hidden>
             </div>
 
             <div class="mb-3">
                 <label for="expiredate" class="form-label">Expire Date</label>
-                <input type="date" class="form-control" id="expiredate" name="expiredate" placeholder="name@example.com" required>
+                <input type="text" id="expiredate" name="expiredate" class="form-control datepicker" autocomplete="off">
             </div>
 
 
@@ -55,4 +55,13 @@
           </div>
       </form>
 </div>
+
+
+<script type="text/javascript">
+    $('.datepicker').datepicker({
+        format: 'yyyy/mm/dd',
+        startDate: new Date()
+    });
+
+    </script>
 @endsection

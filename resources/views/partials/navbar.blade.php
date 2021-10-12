@@ -19,6 +19,27 @@
             <a class="nav-link {{ ($active==="participation") ? 'active' : ''}}" href="/participation">Participation Type</a>
           </li>
         </ul>
+
+        @auth
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <form action="/logout" method="post">
+                    @csrf
+                      <button type="submit" class="dropdown-item">
+                        <i class="bi bi-box-arrow-right"></i> Logout
+                      </button>
+                  </form>
+            </li>
+        </ul>
+        @else
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="/login" class="nav-link {{ ($active==="categories") ? 'active' : ''}}"><i class="bi bi-box-arrow-right"></i> Login</a>
+            </li>
+        </ul>
+        @endauth
+
+
       </div>
     </div>
   </nav>

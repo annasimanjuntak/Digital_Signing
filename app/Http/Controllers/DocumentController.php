@@ -51,9 +51,11 @@ class DocumentController extends Controller
     public function store(Request $request)
     {
 
-        $request->validate([
-         'file' => 'required|mimes:pdf|max:10048'
-
+        $validatedData=$request->validate([
+         'file' => 'required|mimes:pdf|max:10048',
+         'userid'=>'required',
+         'uploader'=>'required',
+         'expiredate'=>'required'
         ]);
 
         $save = new Document;
@@ -63,8 +65,7 @@ class DocumentController extends Controller
         $status=$request->status;
         $expired=$request->expiredate;
         $name = $request->file('file')->getClientOriginalName();
-        $request->file('file')->store('public/files');
-        $path=$request->file('file')->hashName();
+        $path=$request->file('file')->store('files');
 
         if($request->file()){
             $save->user_id = $userid;
