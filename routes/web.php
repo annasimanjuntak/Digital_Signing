@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\SignController;
 use App\Models\Document;
 use Illuminate\Support\Facades\Route;
 
@@ -37,10 +38,15 @@ Route::get('/pos', function () {
 Route::get('docs/{document:id}',[DocumentController::class,'show']);
 
 Route::get('/alldocs',[DocumentController::class, 'index'])->middleware('auth');
+
+Route::get('/testing2',[SignController::class, 'view']);
+
 Route::get('/form/meonly',[DocumentController::class, 'showFormMeOnly']);
 Route::get('/form',[DocumentController::class, 'showForm'])->middleware('auth');
 Route::get('/participation',[DocumentController::class, 'participate'])->middleware('auth');
 Route::post('/store', [DocumentController::class,'store'])->name('store');
+
+Route::post('/text-sign', [SignController::class,'store'])->name('store');
 
 Route::get('/login',[LoginController::class, 'index'])->name('login')->middleware('guest');
 
@@ -51,3 +57,9 @@ Route::post('/logout',[LoginController::class, 'logout']);
 Route::get('/register',function(){
     return view('register.register');
 })->middleware('guest');
+
+
+// Test Route
+Route::get('/testing', function () {
+    return view('signature-gen');
+});

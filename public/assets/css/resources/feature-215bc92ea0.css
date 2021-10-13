@@ -1,0 +1,1415 @@
+.banner {
+	background: url(images/banner-bg.svg) center center/cover no-repeat #2154D1;
+	padding: 144px 0 95px;
+	position: relative;
+	color: #fff
+}
+
+.banner .container {
+	max-width: 1132px
+}
+
+.banner .title {
+	font-size: 48px;
+	line-height: 1.2;
+	margin-bottom: 24px;
+	font-weight: 900
+}
+
+.banner .tip {
+	margin-bottom: 40px;
+	font-size: 24px
+}
+
+.banner .txt {
+	max-width: 540px
+}
+
+.com-block .container,
+.esign-doc .container {
+	max-width: 1132px
+}
+
+.banner .group-btn .btn {
+	width: 224px;
+	height: 52px
+}
+
+.banner .group-btn .btn:first-child {
+	margin-right: 24px
+}
+
+.com-block .txt {
+	flex-basis: 500px
+}
+
+.com-block .pic {
+	flex-basis: 45%;
+	text-align: center
+}
+
+.esign-doc {
+	padding-bottom: 16px
+}
+
+.esign-doc .title {
+	font-size: 32px;
+	font-weight: 900;
+	margin: 30px auto 40px;
+	line-height: 1.2;
+	max-width: 960px
+}
+
+.esign-doc .tip {
+	font-size: 22px;
+	margin: -24px auto 40px;
+	max-width: 960px
+}
+
+.esign-doc img {
+	height: 64px
+}
+
+.esign-doc .choose-file {
+	background: #FFF;
+	border: 1px solid transparent;
+	box-shadow: 0 24px 40px 0 rgba(0, 0, 0, .1);
+	border-radius: 8px;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 24px 12%37px
+}
+
+.esign-doc .choose-file:hover {
+	border-color: #2154D1
+}
+
+.esign-doc .choose-file .cont {
+	margin: 0 auto 56px;
+	max-width: 352px;
+	font-size: 0
+}
+
+.esign-doc .choose-file .sub {
+	font-size: 20px
+}
+
+.esign-doc .choose-file .format {
+	padding-bottom: 16px
+}
+
+.esign-doc .choose-file .btn {
+	width: 100%;
+	max-width: 220px;
+	height: 52px;
+	margin-top: 8px
+}
+
+.esign-doc .choose-file .group {
+	padding-top: 20px;
+	border-top: 1px solid #ddd;
+	margin-top: 32px
+}
+
+.esign-doc .choose-file .group a {
+	padding: 4px;
+	margin: 0 20px;
+	display: block;
+	height: 80px;
+	width: 80px;
+	border-radius: 3px;
+	line-height: 1
+}
+
+.esign-doc .choose-file .group a:hover {
+	background: #fff;
+	box-shadow: 0 7px 14px 0 rgba(43, 43, 88, .14)
+}
+
+.generator-banner .want {
+	background: #2154D1;
+	border-radius: 6px;
+	color: #fff;
+	padding: 24px 40px;
+	margin-top: 40px
+}
+
+.generator-banner .want .sub {
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 1.2
+}
+
+.generator-banner .want .btn {
+	width: 224px;
+	height: 52px
+}
+
+.pdf-online .title {
+	font-size: 32px;
+	font-weight: 900;
+	margin: 48px auto 40px;
+	line-height: 1.2;
+	max-width: 960px
+}
+
+.pdf-online .tip {
+	font-size: 22px;
+	margin: -24px auto 40px;
+	max-width: 960px
+}
+
+.pdf-online .container {
+	max-width: 1100px
+}
+
+.pdf-online .cell {
+	flex-basis: 45%;
+	background: #fff;
+	border: 1px solid #ECECEC;
+	box-shadow: 0 24px 40px 0 rgba(0, 0, 0, .1);
+	border-radius: 8px;
+	padding: 40px 32px 32px
+}
+
+.pdf-online .cell:hover {
+	border-color: #2154D1
+}
+
+.pdf-online .cell.account:hover {
+	border-color: #DF5C4E
+}
+
+.pdf-online .cell .files img {
+	height: 52px
+}
+
+.pdf-online .cell.choose .cont {
+	background: #F9F9F9;
+	border: 2px dashed #D8D8D8;
+	padding: 24px 20px 34px;
+	margin-bottom: 16px
+}
+
+.pdf-online .cell.choose .btn {
+	width: 100%;
+	height: 52px;
+	margin: 8px 0 16px;
+	max-width: 220px
+}
+
+.pdf-online .cell.choose .group a {
+	padding: 4px;
+	margin: 0 10px;
+	display: block;
+	height: 40px;
+	width: 40px;
+	border-radius: 2px;
+	position: relative
+}
+
+.pdf-online .cell.choose .group a:hover {
+	background: #fff;
+	box-shadow: 0 7px 14px 0 rgba(43, 43, 88, .14)
+}
+
+.pdf-online .cell.choose .group a:hover::after {
+	content: attr(data-txt);
+	background: rgba(0, 0, 0, .8);
+	border-right: 2px;
+	padding: 4px 12px;
+	position: absolute;
+	left: 50%;
+	bottom: -5px;
+	font-size: 12px;
+	color: #fff;
+	display: block;
+	transform: translate(-50%, 100%);
+	border-radius: 2px;
+	word-break: keep-all;
+	white-space: nowrap
+}
+
+.pdf-online .cell.choose .format {
+	padding-bottom: 16px
+}
+
+.pdf-online .sub {
+	font-size: 24px;
+	font-weight: 900;
+	margin-bottom: 24px;
+	color: #2154D1;
+	line-height: 1.2
+}
+
+.pdf-online .txt {
+	font-size: 32px;
+	font-weight: 900;
+	align-self: center
+}
+
+.pdf-online .files {
+	padding: 32px 0;
+	margin-bottom: 44px
+}
+
+.pdf-online .files .t {
+	font-size: 20px
+}
+
+.pdf-online .imgs {
+	max-width: 244px;
+	margin: 0 auto 42px;
+	font-size: 0
+}
+
+.pdf-online .account {
+	background-color: #FF7F72;
+	color: #fff
+}
+
+.pdf-online .account ul {
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 14px
+}
+
+.pdf-online .account .sub {
+	color: #fff
+}
+
+.pdf-online .account ul li {
+	padding-left: 36px;
+	margin-bottom: 10px;
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18"><circle cx="8" cy="8" r="8" fill="rgb(227, 245, 222)"/><path fill="rgb(62, 207, 142)" d="M6 4a1 1 0 011.41 0l4 4-4 4A1 1 0 116 10.59L8.59 8 6 5.41A1 1 0 016 4z"/></svg>') 0 center no-repeat
+}
+
+.pdf-online .account .link-tip {
+	padding-bottom: 24px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #DF5C4E
+}
+
+.pdf-online .account .google-sign-btn {
+	margin: 30px 0 24px;
+	box-shadow: 0 8px 14px 0 rgba(0, 11, 35, .22)
+}
+
+.pdf-online .account .google-sign-btn .ctx {
+	background-color: #2361F9;
+	border: none;
+	color: #fff
+}
+
+.legally .cell,
+.sign-pdf .cell:hover {
+	box-shadow: 0 24px 44px 0 rgba(0, 0, 0, .1);
+	border-radius: 8px
+}
+
+.sign-pdf .container {
+	max-width: 1512px
+}
+
+.legally .container,
+.solution .container {
+	max-width: 1132px
+}
+
+.sign-pdf .com-title {
+	padding-bottom: 88px
+}
+
+.sign-pdf .cell {
+	padding: 16px 24px 64px;
+	flex-basis: 32%
+}
+
+.sign-pdf .cell:hover {
+	background: #fff
+}
+
+.sign-pdf .cell .sub {
+	font-size: 24px;
+	font-weight: 900;
+	margin: 16px 0
+}
+
+.navbar {
+	font-size: 14px;
+	margin: 16px 0 24px
+}
+
+.navbar li,
+.navbar li a {
+	margin-right: 5px
+}
+
+.get-notified,
+.send-remin,
+.seq-par,
+.track-doc {
+	padding: 60px 0
+}
+
+.store-signed {
+	padding: 60px 0 120px
+}
+
+.legally {
+	background: url(images/easy-bg.svg) center center/cover no-repeat #2154D1;
+	padding: 144px 0 128px
+}
+
+.faq-online .container,
+.step-instru .container,
+.what-is .container {
+	max-width: 1072px
+}
+
+.legally .title {
+	font-size: 48px;
+	margin-bottom: 64px;
+	font-weight: 900
+}
+
+.legally .cont {
+	margin: 0 -10px
+}
+
+.legally .cell {
+	background: #fff;
+	padding: 40px 30px;
+	width: 260px;
+	margin: 0 10px 20px
+}
+
+.solution .use .cell:hover,
+.suited .cell.actived,
+.suited .cell:hover {
+	border-radius: 4px
+}
+
+.legally .cell .sub {
+	font-size: 18px;
+	margin: 22px 0 16px;
+	font-weight: 700
+}
+
+.what-is {
+	padding: 96px 0 108px;
+	font-size: 18px;
+	color: #333
+}
+
+.what-is .title,
+.what-is h2 {
+	font-size: 32px;
+	font-weight: 900
+}
+
+.what-is .sub,
+.what-is h3 {
+	font-size: 24px
+}
+
+.what-is .sub,
+.what-is .title,
+.what-is h2,
+.what-is h3,
+.what-is p:not(:last-child),
+.what-is ul:not(:last-child) {
+	margin-bottom: 30px
+}
+
+.faq-online {
+	margin: 96px auto 80px
+}
+
+.faq-online .title {
+	font-size: 32px;
+	margin-bottom: 64px;
+	font-weight: 900
+}
+
+details {
+	padding: 0 0 32px 36px;
+	margin-bottom: 32px;
+	border-bottom: 2px solid #dfdfdf;
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path style='fill:rgb(100 203 112)' d='M6 6l12 6-12 6 1.5-6z'/></svg>") 0 5px no-repeat
+}
+
+.solution .cont .cell.actived,
+.solution .cont .cell:hover,
+.solution .use .cell:hover,
+.suited .cell.actived,
+.suited .cell:hover {
+	background: #fff;
+	box-shadow: 0 24px 44px 0 rgba(0, 0, 0, .1)
+}
+
+details[open] summary {
+	color: #64cb70
+}
+
+summary h4 {
+	font-size: 24px;
+	font-weight: 900;
+	margin-bottom: 16px
+}
+
+details p {
+	font-size: 18px
+}
+
+.suited .cell {
+	flex-basis: 31.3%;
+	padding: 56px 32px 30px;
+	margin-bottom: 36px
+}
+
+.suited .cell .sub {
+	font-size: 24px;
+	margin: 24px 0;
+	font-weight: 900;
+	line-height: 1.2
+}
+
+.solution.secure {
+	padding: 76px 0 80px
+}
+
+.solution .title {
+	font-size: 42px;
+	font-weight: 900;
+	padding: 38px 0 64px;
+	line-height: 1.2
+}
+
+.solution .cont .cell {
+	flex-basis: 48.181818%;
+	padding: 16px 40px 32px;
+	margin-bottom: 48px
+}
+
+.solution .cont .cell .sub {
+	font-size: 24px;
+	font-weight: 900;
+	margin: 8px 0 16px;
+	line-height: 1.2
+}
+
+.solution .use {
+	margin-top: 40px
+}
+
+.solution .use .title {
+	font-size: 32px;
+	font-weight: 900;
+	padding-bottom: 72px
+}
+
+.solution .use .cell {
+	flex-basis: 275px;
+	padding: 32px 35px
+}
+
+.solution .use .cell .sub {
+	font-size: 18px;
+	margin-top: 14px;
+	font-weight: 700
+}
+
+.solution .use .cell svg {
+	color: #00C2A7
+}
+
+.solution .use .cell:hover svg {
+	color: inherit
+}
+
+.step-instru {
+	padding: 96px 0;
+	margin-top: 88px
+}
+
+.step-instru .title {
+	font-size: 42px;
+	font-weight: 900;
+	margin-bottom: 48px;
+	text-align: center
+}
+
+.step-instru .tip {
+	margin-bottom: 56px
+}
+
+.step-instru .sub {
+	font-size: 24px;
+	font-weight: 900;
+	margin-bottom: 16px
+}
+
+.step-instru .cont img,
+.step-instru .cont p {
+	margin-bottom: 36px
+}
+
+.lease-rental {
+	margin-bottom: 96px
+}
+
+.lease-rental .title {
+	font-size: 32px;
+	font-weight: 900;
+	margin-bottom: 48px
+}
+
+.lease-rental .container {
+	max-width: 1062px
+}
+
+.industry .container,
+.size-list .container {
+	max-width: 1232px
+}
+
+.lease-rental ul li:not(:last-child) {
+	margin-right: 14px
+}
+
+.lease-rental ul li a {
+	background: #FFF;
+	border: 1px solid #D7D7D7;
+	border-radius: 4px;
+	padding: 6px 10px;
+	display: block;
+	margin-bottom: 16px;
+	font-size: 18px
+}
+
+.lease-rental ul li a:hover {
+	border-color: #2154D1;
+	box-shadow: 0 24px 40px 0 rgba(0, 0, 0, .1)
+}
+
+.industry {
+	padding-bottom: 0;
+	margin-bottom: -48px
+}
+
+.industry .com-title {
+	padding-bottom: 82px
+}
+
+.industry .com-tip {
+	padding-bottom: 80px
+}
+
+.size .com-title,
+.size-list .com-tip,
+.size-list .com-title {
+	padding-bottom: 88px
+}
+
+.industry .cell {
+	flex-basis: 200px;
+	margin-bottom: 60px
+}
+
+.industry .cell .sub {
+	font-size: 20px;
+	font-weight: 700
+}
+
+.industry .cell svg {
+	color: #00C2A7
+}
+
+.industry .cell:hover svg {
+	color: inherit
+}
+
+.size-list .com-tip {
+	margin-top: -64px
+}
+
+.size-list ul li {
+	flex-basis: 30%;
+	font-size: 20px
+}
+
+.size .cell {
+	flex-basis: 32%;
+	background: #fff;
+	border-radius: 8px;
+	padding: 24px 24px 36px
+}
+
+.size .cell:hover {
+	box-shadow: 0 24px 44px 0 rgba(0, 0, 0, .1)
+}
+
+.size .cell .sub {
+	font-size: 24px;
+	font-weight: 900;
+	margin-bottom: 16px;
+	line-height: 1.2
+}
+
+.size .cell svg {
+	color: #00C2A7
+}
+
+.size .cell:hover svg {
+	color: inherit
+}
+
+.size .container {
+	max-width: 1480px
+}
+
+.draw-doc .type-input {
+	background: #fff;
+	border: 1px solid #DFDFDF;
+	box-shadow: 0 24px 40px 0 rgba(0, 0, 0, .1);
+	border-radius: 8px;
+	height: 64px;
+	line-height: 64px;
+	font-size: 20px;
+	max-width: 560px;
+	display: block;
+	margin: 0 auto 56px;
+	padding: 0 20px;
+	width: 100%
+}
+
+.draw-doc .type-input:focus {
+	border-color: #2154D1
+}
+
+.draw-doc .type-btn {
+	width: 240px;
+	height: 52px
+}
+
+.draw-doc .container {
+	max-width: 1132px
+}
+
+.draw-doc .title {
+	font-size: 32px;
+	padding: 24px 0 48px;
+	font-weight: 900
+}
+
+.draw-txt {
+	margin: 0 auto 47px;
+	background: #fff;
+	border: 1px solid #64CB70;
+	box-shadow: 0 24px 40px 0 rgba(0, 0, 0, .1);
+	border-radius: 8px;
+	line-height: 0
+}
+
+.draw-doc .draw-txt .panel {
+	height: 312px;
+	width: 100%;
+	display: block;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px
+}
+
+.draw-txt ul.color {
+	border-top: 1px solid#64CB70;
+	padding: 12px 13% 5px
+}
+
+.draw-txt ul.color li {
+	width: 24px;
+	height: 24px;
+	border-radius: 50px;
+	background-color: #2361F9;
+	cursor: pointer;
+	transition: all ease-in-out .2s;
+	margin: 0 7px 6px
+}
+
+.draw-txt ul.color li.actived {
+	box-shadow: 0 0 0 3px rgba(35, 97, 249, .3)
+}
+
+.draw-txt ul.color li:hover {
+	transform: scale(1.2)
+}
+
+.draw-txt ul.color li.a {
+	background-color: #242424
+}
+
+.draw-txt ul.color li.b {
+	background-color: #666
+}
+
+.draw-txt ul.color li.c {
+	background-color: #ccc
+}
+
+.draw-txt ul.color li.d {
+	background-color: #E02020
+}
+
+.draw-txt ul.color li.e {
+	background-color: #FFA75B
+}
+
+.draw-txt ul.color li.f {
+	background-color: #FEA177
+}
+
+.draw-txt ul.color li.g {
+	background-color: #0091FF
+}
+
+.draw-txt ul.color li.h {
+	background-color: #32C5FF
+}
+
+.draw-txt ul.color li.i {
+	background-color: #65DBDB
+}
+
+.draw-txt ul.color li.j {
+	background-color: #14BE88
+}
+
+.draw-txt ul.color li.k {
+	background-color: #3ECF8E
+}
+
+.draw-txt ul.color li.l {
+	background-color: #7FE4C3
+}
+
+.draw-txt ul.color li.m {
+	background-color: #6236FF
+}
+
+.draw-txt ul.color li.n {
+	background-color: #91A3F2
+}
+
+.draw-txt ul.color li.o {
+	background-color: #242424;
+	overflow: hidden;
+	position: relative
+}
+
+.draw-txt ul.color li.o input {
+	opacity: 0;
+	position: absolute
+}
+
+.draw-doc .group-btn .btn {
+	width: 224px;
+	height: 52px;
+	margin: 10px 20px
+}
+
+.draw-doc .want {
+	background: #2154D1;
+	border-radius: 6px;
+	color: #fff;
+	padding: 24px 60px 24px 40px;
+	margin: 54px auto 0;
+	max-width: 1040px
+}
+
+.draw-doc .want .sub {
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 1.2
+}
+
+.draw-doc .want .btn {
+	width: 224px;
+	height: 52px
+}
+
+.draw-doc .load-more {
+	width: 240px;
+	height: 52px
+}
+
+.sign-content-type .group-btn .btn {
+	width: 224px;
+	height: 52px;
+	margin: 10px 20px
+}
+
+.signature-popu {
+	position: fixed;
+	background-color: rgba(255, 255, 255, .96);
+	z-index: 9;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 10%
+}
+
+.signature-popu .draw-txt .panel {
+	position: relative;
+	margin: 80px auto;
+	text-align: center;
+	font-size: 30px;
+	height: 100px
+}
+
+.signature-popu .draw-txt .panel::after {
+	content: attr(data-text);
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 100%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+.signature-popu .group-btn .btn {
+	width: 224px;
+	height: 52px;
+	margin: 10px 20px
+}
+
+.created-signatures {
+	padding: 72px 0;
+	max-width: 1040px;
+	margin: 0 auto
+}
+
+.created-signatures li {
+	background: #fff;
+	box-shadow: 0 24px 40px 0 rgba(0, 0, 0, .1);
+	border-radius: 8px;
+	width: 312px;
+	height: 152px;
+	margin-bottom: 56px;
+	position: relative;
+	font-size: 30px
+}
+
+.dialog,
+.download-pic .guide-cont {
+	box-shadow: 0 8px 32px rgba(0, 65, 113, .16)
+}
+
+.created-signatures li:hover {
+	border: 1px solid rgba(33, 84, 209, 1);
+	cursor: pointer
+}
+
+.created-signatures li::after {
+	content: attr(data-text);
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 100%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+.created-signatures li.item-1 {
+	font-family: 'Dancing Script'
+}
+
+.created-signatures li.item-2 {
+	font-family: 'Kaushan Script'
+}
+
+.created-signatures li.item-3 {
+	font-family: Pacifico
+}
+
+.created-signatures li.item-4 {
+	font-family: 'Indie Flower'
+}
+
+.created-signatures li.item-5 {
+	font-family: 'Shadows Into Light'
+}
+
+.created-signatures li.item-6 {
+	font-family: Satisfy
+}
+
+.created-signatures li.item-7 {
+	font-family: Sacramento
+}
+
+.created-signatures li.item-8 {
+	font-family: Parisienne
+}
+
+.created-signatures li.item-9 {
+	font-family: Damion
+}
+
+.created-signatures li.item-10 {
+	font-family: Cookie
+}
+
+.created-signatures li.item-11 {
+	font-family: Yellowtail
+}
+
+.created-signatures li.item-12 {
+	font-family: 'Marck Script'
+}
+
+.created-signatures li.item-13 {
+	font-family: 'Cedarville Cursive'
+}
+
+.created-signatures li.item-14 {
+	font-family: 'Homemade Apple'
+}
+
+.created-signatures li.item-15 {
+	font-family: Allura
+}
+
+.created-signatures li.item-16 {
+	font-family: 'Nothing You Could Do'
+}
+
+.created-signatures li.item-17 {
+	font-family: 'Reenie Beanie'
+}
+
+.created-signatures li.item-18 {
+	font-family: 'Nanum Brush Script'
+}
+
+.created-signatures li.item-19 {
+	font-family: Calligraffitti
+}
+
+.created-signatures li.item-20 {
+	font-family: 'Dawning of a New Day'
+}
+
+.created-signatures li.item-21 {
+	font-family: Zeyada
+}
+
+.created-signatures li.item-22 {
+	font-family: 'Give You Glory'
+}
+
+.created-signatures li.item-23 {
+	font-family: Charmonman
+}
+
+.created-signatures li.item-24 {
+	font-family: 'Dr Sugiyama'
+}
+
+.created-signatures li.item-25 {
+	font-family: 'Beth Ellen'
+}
+
+.created-signatures li.item-26 {
+	font-family: 'Over the Rainbow'
+}
+
+.created-signatures li.item-27 {
+	font-family: 'Lovers Quarrel'
+}
+
+.created-signatures li.item-28 {
+	font-family: 'Liu Jian Mao Cao'
+}
+
+.created-signatures li.item-29 {
+	font-family: 'Long Cang'
+}
+
+.created-signatures li.item-30 {
+	font-family: Ruthie
+}
+
+.download-pic {
+	position: fixed;
+	overflow-y: auto;
+	/* background-color: rgba(0, 0, 0, .6); */
+	color: #536D8C;
+	left: 0;
+	top: 0;
+	z-index: 9;
+	width: 100%;
+	height: 100%;
+	padding-top: 100px
+}
+
+.dialog {
+	position: relative;
+	text-align: center;
+	max-width: 680px;
+	overflow: hidden;
+	background: #DEF7F5;
+	border-radius: 8px
+}
+
+.dialog .close-btn {
+	position: absolute;
+	top: 11px;
+	right: 13px;
+	cursor: pointer
+}
+
+.dialog .close-btn:hover {
+	color: #377DFF
+}
+
+.dialog-content {
+	padding: 30px 24px;
+	overflow: auto
+}
+
+.dialog-content .tip {
+	font-size: 14px;
+	line-height: 24px;
+	max-width: 520px;
+	color: #50637A;
+	margin: 16px auto 0
+}
+
+.dialog-content .title {
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 1.2;
+	color: #3D4958
+}
+
+.dialog-content .btn {
+	width: 158px;
+	height: 36px;
+	margin-top: 24px;
+	background: #377DFF;
+	border-radius: 3px;
+	font-size: 16px
+}
+
+.dialog-content .btn:hover {
+	background-color: #194AC4;
+	color: #fff
+}
+
+.dialog-content .contact-link-container {
+	font-size: 14px;
+	line-height: 24px;
+	color: #50637A;
+	text-align: center;
+	text-decoration-line: underline;
+	margin-top: 20px
+}
+
+.download-pic .guide-cont {
+	max-width: 640px;
+	margin: 0 auto;
+	background: #FFF;
+	border-radius: 8px
+}
+
+.download-pic .guide-cont .g-c-header {
+	height: 40px;
+	line-height: 40px;
+	padding: 8px 16px;
+	border-bottom: 1px solid #E8EAF2
+}
+
+.download-pic .guide-cont .g-c-body {
+	overflow-y: auto;
+	padding: 24px;
+	text-align: center
+}
+
+.download-pic .guide-cont .g-c-body h3 {
+	font-weight: 800;
+	font-size: 26px;
+	line-height: 36px;
+	margin: 16px 0;
+	color: #375375
+}
+
+.download-pic .plan-feat-list {
+	text-align: left;
+	width: 500px;
+	max-width: 100%;
+	margin-top: 24px
+}
+
+.download-pic .plan-feat-list li {
+	position: relative;
+	padding-left: 30px;
+	line-height: 24px;
+	margin-bottom: 8px;
+	font-size: 14px
+}
+
+.download-pic .plan-feat-list li::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' transform='translate(5,5)'><rect width='14' height='14' style='fill:rgb(62, 207, 142)' rx='24'/><path style='fill:rgb(255,255,255)' d='M9.6 4.2a.5.5 0 01.9.6l-3.6 5c-.1.2-.4.3-.7.1L3.7 7.4a.5.5 0 11.6-.8l2 1.2 3.3-3.6z'/></svg>");
+	background-size: cover
+}
+
+.download-pic .g-c-btn {
+	width: 260px;
+	height: 52px;
+	margin: 32px 0 16px;
+	background: linear-gradient(180deg, #6692FF 0, #2361F9 100%), linear-gradient(180deg, #5485FF 0, #033FD0 100%);
+	border-radius: 50px;
+	border: none;
+	color: #fff;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+	cursor: pointer
+}
+
+.download-pic .g-c-btn:hover {
+	background: linear-gradient(180deg, #5b87f8 0, #1c5af7 100%), linear-gradient(180deg, #4a7cfa 0, #0437af 100%)
+}
+
+.download-pic .no-card-tip {
+	font-size: 12px
+}
+
+.review-group {
+	margin: 10px 0 40px
+}
+
+.review-group .star-group {
+	margin: 0 5px
+}
+
+.review-group .star-group span:hover {
+	color: #ff8000;
+	cursor: pointer
+}
+
+.review-group .star-group span {
+	position: relative;
+	line-height: 1
+}
+
+.review-group .star-group span:hover::after,
+.review-group .star-group span:hover::before {
+	opacity: 1
+}
+
+.review-group .star-group span::after,
+.review-group .star-group span::before {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	opacity: 0;
+	transition: all linear .2s
+}
+
+.review-group .star-group span::before {
+	content: attr(text);
+	background: #000;
+	color: #fff;
+	display: block;
+	text-align: center;
+	padding: 12px 10px;
+	border-radius: 4px;
+	top: -10px
+}
+
+.review-group .star-group span::after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0;
+	border-color: #000 transparent transparent;
+	top: -5px
+}
+
+@media (max-width:960px) {
+	.banner .pic img,
+	.com-block .pic img {
+		width: 80%
+	}
+	.banner {
+		padding: 100px 0 60px
+	}
+	.banner .title,
+	.draw-doc .want .sub {
+		font-size: calc(24px + 2vw)
+	}
+	.solution .title {
+		font-size: calc(24px + 1.5vw)
+	}
+	.banner .txt {
+		margin-top: 16px
+	}
+	.banner .group-btn .btn {
+		margin: 10px!important
+	}
+	.legally .title {
+		font-size: calc(24px + 1.8vw)
+	}
+	.get-notified,
+	.legally,
+	.send-remin,
+	.seq-par,
+	.sign-doc,
+	.track-doc {
+		padding: 60px 0
+	}
+	.com-block .txt {
+		flex-basis: 100%
+	}
+	.pdf-online .txt {
+		margin: 20px 0
+	}
+}
+
+@media (max-width:769px) {
+	.suited .cell {
+		background: #fff;
+		box-shadow: 0 24px 44px 0 rgba(0, 0, 0, .1);
+		border-radius: 4px;
+		padding: 30px
+	}
+	.download-group,
+	.solution.secure,
+	.step-instru,
+	.what-is {
+		padding: 60px 0
+	}
+	.download-group .title {
+		font-size: calc(24px + 1.8vw)
+	}
+	.step-instru .title {
+		font-size: calc(20px + 1.8vw)
+	}
+	.esign-doc .title,
+	.faq-online .title,
+	.lease-rental .title,
+	.pdf-online .title,
+	.pdf-online .txt,
+	.what-is .title,
+	.what-is h2 {
+		font-size: calc(20px + 1.5vw)
+	}
+	.solution .title {
+		padding: 20px 0 40px
+	}
+	.solution .cont .cell {
+		background: #fff;
+		box-shadow: 0 24px 44px 0 rgba(0, 0, 0, .1);
+		margin-bottom: 30px
+	}
+	.what-is .sub,
+	.what-is .title,
+	.what-is h2,
+	.what-is h3,
+	.what-is p:not(:last-child),
+	.what-is ul:not(:last-child) {
+		margin-bottom: 20px
+	}
+	.size-list ul li {
+		flex-basis: 48%
+	}
+	.industry .com-title,
+	.sign-pdf .com-title,
+	.size .com-title,
+	.size-list .com-tip,
+	.solution .use .title {
+		padding-bottom: 40px
+	}
+	.lease-rental {
+		margin-bottom: 60px
+	}
+	.faq-online {
+		margin: 60px auto
+	}
+	.faq-online .title,
+	.legally .title {
+		margin-bottom: 40px
+	}
+	details {
+		padding-bottom: 20px;
+		margin-bottom: 20px
+	}
+	summary h4 {
+		font-size: calc(18px + .5vw)
+	}
+	.com-block .com-tip {
+		font-size: calc(16px + .6vw)
+	}
+	.sign-pdf .cell {
+		background: #fff;
+		box-shadow: 0 24px 44px 0 rgba(0, 0, 0, .1);
+		border-radius: 8px;
+		margin-bottom: 20px
+	}
+	.get-notified,
+	.legally,
+	.send-remin,
+	.seq-par,
+	.sign-doc,
+	.track-doc {
+		padding: 30px 0
+	}
+	.store-signed {
+		padding: 30px 0 60px
+	}
+	.industry {
+		margin-bottom: -20px
+	}
+	.draw-doc .want .sub,
+	.size .cell {
+		margin-bottom: 20px
+	}
+	.size .cell {
+		box-shadow: 0 24px 44px 0 rgba(0, 0, 0, .1)
+	}
+	.dialog {
+		max-height: 85%;
+		overflow-y: scroll
+	}
+}
+
+@media (max-width:480px) {
+	.size-list ul li {
+		flex-basis: 100%
+	}
+	.legally .cell {
+		width: 100%
+	}
+	.dialog .tip {
+		width: 80%;
+		margin-top: 10px
+	}
+	.dialog .title {
+		font-size: 32px;
+		line-height: 30px
+	}
+	.dialog .btn {
+		margin-top: 16px
+	}
+	.dialog .contact-link-container {
+		margin: 10px 0
+	}
+}
